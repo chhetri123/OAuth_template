@@ -1,8 +1,7 @@
-// create  dataBase Connections and Export
-require("dotenv").config(".env");
 // use dev.env if enviroment is developemnt else use prod.env
 
 const dotenv = require("dotenv");
+dotenv.config(".env");
 
 if (process.env.NODE_ENV === "development") {
   dotenv.config({ path: "dev.env" });
