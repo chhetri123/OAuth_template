@@ -21,3 +21,5 @@ db.then(() => {
 app.listen(config.port || 8001, () => {
   console.log(`Server is running on port ${config.port}`);
 });
+
+module.exports = app;
